@@ -1,17 +1,17 @@
-version: '3.8'
+version: "3.8"
 services:
   sr-api:
     container_name: sr_api
-    image: 'builder-compose_sr_api:latest'
+    image: "builder-compose_sr_api:latest"
     build:
       context: https://github.com/JimmieM/doro-be.git
       target: production
       dockerfile: Dockerfile
     command: npm run start
     expose:
-      - '9005'
+      - "9005"
     ports:
-      - '9005:9005'
+      - "9005:9005"
     environment:
       NODE_ENV: production
     networks:

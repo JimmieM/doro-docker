@@ -8,3 +8,6 @@ sudo apt install docker-compose
 
 docker compose version
 
+sudo chmod 777 /var/run/docker.sock
+
+
